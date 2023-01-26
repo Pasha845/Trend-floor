@@ -1,0 +1,97 @@
+@import '_variables.scss';
+
+.guarantee {
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  &__list {
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid $grey;
+  }
+
+  &__elem:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  &__year {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    color: $orange;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__cube {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__subcube {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__subcube-text {
+    text-align: center;
+    margin: 0;
+    border: 2px solid $orange;
+    border-radius: 5px;
+    padding: 38px 74px;
+    max-width: 1080px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__subcube-letter {
+    color: $orange;
+  }
+
+  &__div {
+    column-count: 2;
+  }
+
+  &__rule {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__rule:before {
+    content: '.'; 
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: $orange;
+    text-align: right;
+  }
+}

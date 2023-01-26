@@ -1,0 +1,49 @@
+@import '_variables.scss';
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $md_grey;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__icons {
+    grid-column: span 3;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__cube {
+    flex-wrap: wrap;
+  }
+
+  &__site:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__list {
+    display: flex;
+    grid-column: span 9;
+  }
+
+  &__margin:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  &__link-margin:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
