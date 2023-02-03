@@ -9,11 +9,14 @@
 
   &__elem {
     grid-column: span 7;
+    margin-left: 30px;
+    padding-top: 30px;
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    max-width: 530px;
     font-size: 32px;
     line-height: 42px;
     font-weight: 700;
@@ -22,7 +25,18 @@
   &__text {
     margin: 0;
     margin-bottom: 30px;
+    max-width: 610px;
     line-height: 24px;
+  }
+
+  &__list {
+    column-count: 3;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   &::before {

@@ -5,13 +5,19 @@ const heroSwiper = new Swiper('.hero__swiper', {
   pagination: {
     el: '.hero__pagination',
   },
+  slidesPerView: "auto",
+  grid: {
+    rows: 1
+  },
+  spaceBetween: 32,
   navigation: {
-    nextEl: '.hero__pagination',
-    prevEl: '.hero__pagination',
+    nextEl: ".hero__next",
+    prevEl: ".hero__prev",
+    disabledClass: "hero__btn--disabled"
   },
   scrollbar: {
-    hide: true,
-  }
+    hide: true
+  },
 });
 
 /* products */
