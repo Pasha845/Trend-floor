@@ -11,6 +11,8 @@
 
   &__link {
     padding: 20px 45px;
+    font-size: 20px;
+    line-height: 19px;
   }
 
   &__link-margin:not(:last-child) {
@@ -24,5 +26,10 @@
 
   &__slider-wrapper {
     position: relative;
+  }
+
+  &__pagination {
+    text-align: center;
+    margin-top: 20px;
   }
 }

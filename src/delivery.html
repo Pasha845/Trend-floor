@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Главная страница.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Доставка и оплата</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <h1 class="visually-hidden">Trend floor</h1>
+  <header class="header">
+    <div class="header__padding">
+      <div class="header__container container flex">
+        <div class="header__nav-div">
+          <nav class="header__subcube flex">
+            <ul class="header__menu list-reset flex" id="menu">
+              <li class="header__link-margin">
+                <a class="container-link" href="company.html" aria-label="О компании">О компании</a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-link" href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-link" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-link" href="contacts.html" aria-label="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__div flex">
+          <a class="">Самара, Авроры 114а к5</a>
+          <div class="header__filter">
+            <select class="js-choices">
+              <option value="one">+7 846 491 41 63</option>
+              <option value="two">Написать в <a class="header__choices-telegram" href="#">Telegram</a></option>
+              <option value="three">Написать в <a class="header__choices-whatsapp" href="#">WhatsApp</a></option>
+            </select>
+          </div>
+        </div>
+        <div class="list-reset flex">
+          <a class="container-site" href="cabinet.html" aria-label="Личный кабинет"> 
+            <svg class="container-site-hover" width="32" height="32">
+              <use xlink:href="img/sprite.svg#cabinet"></use>
+            </svg>
+          </a>
+          <a class="container-site" href="#" aria-label="graph-bar">
+            <svg class="container-site-hover" width="32" height="32">
+              <use xlink:href="img/sprite.svg#graph-bar"></use>
+            </svg>
+          </a>
+          <a class="container-site" href="favorites.html" aria-label="Избранное">
+            <svg class="container-site-hover" width="32" height="32">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <a class="container-site" href="basket.html" aria-label="Кабинет">
+            <svg class="container-site-hover" width="32" height="32">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__subdiv">
+      <div class="container flex">
+        <a class="header__logo">
+          <img class="header__logo-foto" src="img/logo.svg" alt="Logo" width="142" height="44">
+        </a>
+        <ul class="header__cube list-reset flex">
+          <li class="header__sublink-margin">
+            <a class="header__btn container-btn" href="catalog.html">Каталог</a>
+          </li>
+          <li class="header__sublink-margin">
+            <a class="container-link" href="services.html">Услуги</a>
+          </li>
+          <li class="header__sublink-margin">
+            <a class="container-link" href="stock.html">Акции</a>
+          </li>
+        </ul>
+        <form class="header__form flex">
+          <label class="header__label container-label">
+            <input class="header__input container-input" type="search" placeholder="Поиск">
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="header__link-div container">
+      <ul class="header__breadcrumbs list-reset">
+        <li class="header__breadcrumbs-item">
+          <a class="container-link" href="index.html" aria-label="Главная">Главная</a>
+        </li>
+        <li class="header__breadcrumbs-item">
+          <a class="container-link last-link" aria-label="Доставка и оплата">Доставка и оплата</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="delivery">
+    <div class="container">
+      <div class="delivery__border-bottom">
+        <h2 class="delivery__title container-title">Самовывоз</h2>
+        <ul class="delivery__list list-reset">
+          <li class="delivery__item">
+            <svg width="64" height="64">
+              <use xlink:href="img/sprite.svg#stock"></use>
+            </svg>
+            <h3 class="delivery__subtitle">Самовывоз со склада</h3>
+            <p class="delivery__text">(Адрес: г. Самара, ул. Дзержинского 48. ТЦ МегаСтрой) осуществляется по предварительной договоренности.</p>
+          </li>
+          <li class="delivery__item">
+            <svg width="64" height="64">
+              <use xlink:href="img/sprite.svg#market"></use>
+            </svg>
+            <h3 class="delivery__subtitle">Из салона Trend Floor</h3>
+            <p class="delivery__text">
+              (Адрес: г. Самара, ул. Авроры, д.114а, к.5)
+              Самовывоз небольших партий товаров, весом не более 40кг, по предварительной договоренности.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="delivery__border-bottom">
+        <h2 class="delivery__title container-title">Доставка</h2>
+        <div class="delivery__list">
+          <ul class="delivery__item">
+            <li>Стоимость доставки заказов по городу Самара* - <span>1 500 руб</span></li>
+            <li>Доставка осуществляется в заранее согласованную дату. Возможна доставка в вечернее время и выходные дни.</li>
+            <li>Доставка осуществляется собственным транспортом магазина.</li>
+            <li>Доставка осуществляется до подъезда</li>
+          </ul>
+          <ul class="delivery__item">
+            <li>Товар в наличии на складе в Самаре - доставка осуществляется в течение 2х дней с даты оплаты.</li>
+            <li>
+              Товар под заказ - при поступлении заказа на наш склад мы свяжемся с Вами, для согласования дня
+              и интервала времени, в который водитель - экспедитор доставит заказ.
+            </li>
+            <li>Разгрузка осуществляется силами заказчика.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="delivery__border-bottom">
+        <h2 class="delivery__title container-title">Разгрузка и подъем</h2>
+        <p>При необходимости Вы можете воспользоваться услугой разгрузки и подъема - стоимость рассчитывается индивидуально.</p>
+        <ul class="delivery__list">
+          <li class="delivery__item">Подъем осуществляет водитель, который привозит заказ</li>
+          <li class="delivery__item">Стоимость работ можно включить в Ваш заказ и произвести оплату сразу, или оплатить водителю, по факту выполнения разгрузочных работ, удобным для Вас способом. </li>
+        </ul>
+        <div class="delivery__cube container-border">
+          <h3 class="">Обращаем ваше внимание</h3>
+          <p class="">Стоимость доставки заказа весом более 1500кг увеличивается в ДВА раза!</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="delivery__title container-title">Оплата</h2>
+        <p class="delivery__subtext">При доставке по Самаре оплата осуществляется при получении товара</p>
+        <p class="delivery__subtext">Доставка по РФ осуществляется при полной предоплате заказа</p>
+        <div class="">
+          Изменение суммы оплаты при доставке (предъявление дисконтной карты при доставке,
+          но не заявленной в заказе, изменение стоимости товара в рамках специальных предложений,
+          вступивших в действие после подтверждения заказа и пр.), к сожалению, невозможно.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container container flex">
+      <div class="footer__icons">
+        <a class="footer__logo">
+          <img src="img/logo.svg" alt="Logo" width="142" height="44">
+        </a>
+        <div class="footer__cube flex">
+          <a class="footer__site container-link" href="#" aria-label="ВК">
+            <span class="container-focus-link">
+              <svg width="48" height="48">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="footer__site container-link" href="#" aria-label="Инстаграм">
+            <span class="container-focus-link">
+              <svg width="48" height="48">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="footer__site container-link" href="#" aria-label="YouTube">
+            <span class="container-focus-link">
+              <svg width="48" height="48">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__list">
+        <ul class="footer__margin list-reset">
+          <li class="footer__">Информация о магазине</li>
+          <li class="footer__link-margin">
+            <a class="">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
+                <use xlink:href="img/sprite.svg#place"></use>
+              </svg>
+              Самара, Авроры 114а к5
+            </a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="header__tel" href="tel:+78464914163">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              +7 846 491 41 63
+            </a>
+          <li class="footer__link-margin">
+            <a class="" href="mailto:info@floorsmr.ru">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+              info@floorsmr.ru
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__margin list-reset">
+          <li class="footer__subtitle">О компании</li>
+          <li class="footer__link-margin">
+            <a class="container-link" href="#" aria-label="Магазины">Магазины</a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-link" href="company.html" aria-label="О компании">О компании</a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-link" href="stock.html" aria-label="Акции">Акции</a>
+          </li>
+        </ul>
+        <ul class="footer__margin list-reset">
+          <li class="footer__subtitle">Покупателям</li>
+          <li class="footer__link-margin">
+            <a class="container-link" href="services.html" aria-label="Услуги">Услуги</a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-link" href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-blink" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="libs/choices.min.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/selector.js"></script>
+</body>
+</html>

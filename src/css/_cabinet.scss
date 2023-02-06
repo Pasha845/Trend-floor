@@ -1,0 +1,23 @@
+@import '_variables.scss';
+
+.cabinet {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+
+  &__item-one {
+    grid-column: span 3;
+  }
+
+  &__item-two {
+    grid-column: span 9;
+  }
+
+  &__btn-blue {
+    background-color: $blue;
+  }
+
+  &__btn-green {
+    background-color: $green;
+  }
+}

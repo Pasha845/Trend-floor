@@ -3,15 +3,14 @@
 .offer {
   padding-top: 15px;
   padding-bottom: 35px;
-  
+
   &__list {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {
-    grid-column: span 2;
+    max-width: 245px;
     position: relative;
     flex-grow: 1;
     display: flex;

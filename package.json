@@ -1,7 +1,7 @@
 {
-  "name": "altera",
+  "name": "trend-floor",
   "version": "1.0.0",
-  "description": "",
+  "description": "![landing](https://user-images.githubusercontent.com/106194295/216671561-74515935-68c0-461f-b699-6c0206dc9a58.jpg)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

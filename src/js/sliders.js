@@ -1,7 +1,6 @@
 /* hero */
 
 const heroSwiper = new Swiper('.hero__swiper', {
-  loop: true,
   pagination: {
     el: '.hero__pagination',
   },
@@ -23,7 +22,6 @@ const heroSwiper = new Swiper('.hero__swiper', {
 /* products */
 
 const usefulSlider = new Swiper('.products__swiper', {
-  loop: true,
   pagination: {
     el: '.products__pagination',
   },
@@ -31,7 +29,7 @@ const usefulSlider = new Swiper('.products__swiper', {
   grid: {
     rows: 1
   },
-  spaceBetween: 32,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".products__next",
     prevEl: ".products__prev",
