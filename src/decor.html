@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Главная страница.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Настройки профиля</title>
+  <title>Оформление заказа</title>
   <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -97,75 +97,19 @@
           <a class="container-link" href="index.html" aria-label="Главная">Главная</a>
         </li>
         <li class="header__breadcrumbs-item">
-          <a class="container-link last-link" aria-label="Профиль">Профиль</a>
+          <a class="container-link" href="basket.html" aria-label="Корзина">Корзина</a>
+        </li>
+        <li class="header__breadcrumbs-item">
+          <a class="container-link last-link" aria-label="Оформление заказа">Оформление заказа</a>
         </li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="cabinet">
+    <section class="decor">
       <div class="container">
-        <ul class="cabinet__list list-reset">
-          <li class="cabinet__item-one container-border">
-            <a class="cabinet__btn container-btn flex" href="cabinet.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#profile"></use>
-              </svg>
-              Настройки профиля
-            </a>
-            <a class="cabinet__btn container-subbtn flex" href="orders.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#orders"></use>
-              </svg>
-              Активные заказы
-            </a>
-            <a class="cabinet__btn container-subbtn flex" href="history.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#history"></use>
-              </svg>
-              История заказов
-            </a>
-          </li>
-          <li class="cabinet__item-two container-border">
-            <form class="cabinet__form" action="send.php" method="post">
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="text" placeholder="Имя" name="name" id="name">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Телефон" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#telephone"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Электронная почта" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#email"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Новый пароль" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#new-password"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Подтверждение нового пароля" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#true-new-password"></use>
-                </svg>
-              </label>
-              <div>
-                <button class="container-btn">Сохранить</button>
-                <a class="container-subbtn">Отменить</a>
-              </div>
-            </form>
-          </li>
-        </ul>
+        
       </div>
     </section>
   </main>

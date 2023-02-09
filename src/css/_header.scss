@@ -291,14 +291,14 @@
   }
 
   &__label {
-    width: 715px;
+    max-width: 715px;
   }
 
   &__input {
     margin: 0;
     padding: 18px;
     border-radius: 5px;
-    width: 715px;
+    max-width: 715px;
     height: 50px;
   }
   
@@ -333,20 +333,15 @@
   }
 }
 
-@keyframes dropdownOpen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes dropdownClose {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
+@media (max-width: 1000px) {
+  .header {
+    &__link-margin:not(:last-child) {
+      margin-right: 15px;
+    }
+    
+    &__place,
+    &__filter {
+      display: none;
+    }
   }
 }

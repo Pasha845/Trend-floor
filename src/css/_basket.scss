@@ -1,12 +1,30 @@
 @import '_variables.scss';
 
 .basket {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
 
   &__item-one {
     grid-column: span 7;
+  }
+
+  &__div {
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    padding-right: 40px;
+  }
+
+  &__links {
+    justify-content: space-between;
+  }
+
+  &__product {
+    padding: 30px;
+    padding-left: 20px;
   }
 
   &__subtitle {
@@ -16,13 +34,33 @@
     line-height: 22px;
   }
 
+  &__quantity {
+    padding: 16px;
+  }
+
+  &__size {
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 23px;
+    color: $white;
+    background-color: $orange;
+  }
+
+  &__number {
+    border-radius: 5px;
+    padding: 18px;
+    line-height: 15px;
+    background-color: $grey;
+  }
+
   &__price {
     margin: 0;
     font-size: 24px;
     line-height: 37px;
     font-weight: 700;
   }
-
 
   &__item-two {
     grid-column: span 4;

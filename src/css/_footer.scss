@@ -11,7 +11,7 @@
     grid-template-columns: repeat(12, 1fr);
   }
 
-  &__icons {
+  &__div {
     grid-column: span 3;
   }
 
@@ -25,7 +25,7 @@
   }
 
   &__site:not(:last-child) {
-    margin-right: 18px;
+    margin-right: 15px;
   }
 
   &__list {
@@ -34,7 +34,7 @@
   }
 
   &__margin:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 183px;
   }
 
   &__subtitle {
@@ -44,7 +44,23 @@
     line-height: 19px;
   }
 
+  &__sublink-margin:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
   &__link-margin:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+  }
+
+  &__icons {
+    align-items: center
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    &__margin:not(:last-child) {
+      margin-right: 70px;
+    }
   }
 }

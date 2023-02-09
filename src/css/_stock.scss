@@ -1,0 +1,35 @@
+@import '_variables.scss';
+
+.stock {
+  padding-top: 15px;
+  padding-bottom: 70px;
+
+  &__item {
+    grid-column: span 4;
+  }
+
+  &__photo {
+    border-radius: 5px;
+    height: 240px;
+    background-color: #D9D9D9;
+  }
+
+  &__subtext {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 22.4px;
+    color: #747474;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__text {
+    margin: 0;
+    line-height: 22.4px;
+  }
+}

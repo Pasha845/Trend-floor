@@ -35,7 +35,7 @@
           </nav>
         </div>
         <div class="header__div flex">
-          <a class="">Самара, Авроры 114а к5</a>
+          <a class="header__place">Самара, Авроры 114а к5</a>
           <div class="header__filter">
             <select class="js-choices">
               <option value="one">+7 846 491 41 63</option>
@@ -45,23 +45,23 @@
           </div>
         </div>
         <div class="list-reset flex">
-          <a class="container-site" href="cabinet.html" aria-label="Личный кабинет"> 
-            <svg class="container-site-hover" width="32" height="32">
+          <a class="container-link container-site" href="cabinet.html" aria-label="Личный кабинет"> 
+            <svg width="32" height="32">
               <use xlink:href="img/sprite.svg#cabinet"></use>
             </svg>
           </a>
-          <a class="container-site" href="#" aria-label="graph-bar">
-            <svg class="container-site-hover" width="32" height="32">
+          <a class="container-link container-site" href="comparison.html" aria-label="Сравнение">
+            <svg width="32" height="32">
               <use xlink:href="img/sprite.svg#graph-bar"></use>
             </svg>
           </a>
-          <a class="container-site" href="favorites.html" aria-label="Избранное">
-            <svg class="container-site-hover" width="32" height="32">
+          <a class="container-link container-site" href="favorites.html" aria-label="Избранное">
+            <svg width="32" height="32">
               <use xlink:href="img/sprite.svg#heart"></use>
             </svg>
           </a>
-          <a class="container-site" href="basket.html" aria-label="Кабинет">
-            <svg class="container-site-hover" width="32" height="32">
+          <a class="container-link container-site" href="basket.html" aria-label="Корзина">
+            <svg width="32" height="32">
               <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </a>
@@ -75,13 +75,13 @@
         </a>
         <ul class="header__cube list-reset flex">
           <li class="header__sublink-margin">
-            <a class="header__btn container-btn" href="catalog.html">Каталог</a>
+            <a class="header__btn container-btn" href="catalog.html" aria-label="Каталог">Каталог</a>
           </li>
           <li class="header__sublink-margin">
-            <a class="container-link" href="services.html">Услуги</a>
+            <a class="container-link" href="services.html" aria-label="Услуги">Услуги</a>
           </li>
           <li class="header__sublink-margin">
-            <a class="container-link" href="stock.html">Акции</a>
+            <a class="container-link" href="stock.html" aria-label="Акции">Акции</a>
           </li>
         </ul>
         <form class="header__form flex">
@@ -192,7 +192,7 @@
           <li class="products__link-margin"><a class="products__sublink container-subbtn" href="#">Распродажа</a></li>
           <li class="products__link-margin"><a class="products__sublink container-subbtn" href="#">Хиты</a></li>
         </ul>
-        <div class="products__slider-wrapper">
+        <div class="container-slider-wrapper">
           <button class="swiper-btn swiper-prev products__prev" aria-label="К предыдущему слайду"></button>
           <button class="swiper-btn swiper-next products__next" aria-label="К следующему слайду"></button>
         </div>
@@ -415,13 +415,13 @@
                 <button class="advice__btn container-btn" type="submit">Оставить заявку</button>
               </form>
               <svg width="358" height="358">
-                <use xlink:href="img/sprite.svg#contacts__item-1"></use>
+                <use xlink:href="img/sprite.svg#advice__photo-1"></use>
               </svg>
             </div>
           </div>
           <div class="advice__item-two">
             <svg width="140" height="140">
-              <use xlink:href="img/sprite.svg#contacts__item-2"></use>
+              <use xlink:href="img/sprite.svg#advice__photo-2"></use>
             </svg>
             <h2 class="advice__title-two">Хотите стать партнером?</h2>
             <p class="advice__text-1">
@@ -489,127 +489,133 @@
     <section class="earlier">
       <div class="container">
         <h2 class="earlier__title">Вы недавно смотрели</h2>
-        <div class="earlier__list">
-          <article class="earlier__item">
-            <picture>
-              <source srcset="img/products__mobile-foto-1.webp" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="img/products__default-foto-1.png" media="(min-width: 577px)">
-              <img srcset="img/products__default-foto-1.png" alt="Default image" src="#" width="624" height="426">
-            </picture>
-            <div class="container-cube">
-              <div class="container-div">
-                <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
-                <p class="container-options">Страна:<span> Россия</span></p>
-                <p class="container-options">Толщина:<span> 9 мм</span></p>
-                <p class="container-options">Класс:<span> 33</span></p>
-              </div>
-              <div class="container-elem flex">
-                <strong class="container-price">3 176 ₽/м2</strong>
-                <div>
-                  <a class="container-site" href="favorites.html" aria-label="Избранное">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a class="container-site" href="#" aria-label="graph-bar">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#graph-bar"></use>
-                    </svg>
-                  </a>
+        <div class="container__slider-wrapper">
+          <button class="swiper-btn swiper-prev earlier__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next earlier__next" aria-label="К следующему слайду"></button>
+        </div>
+        <div class="swiper earlier__list">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <picture>
+                <source srcset="img/products__mobile-foto-1.webp" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/products__default-foto-1.png" media="(min-width: 577px)">
+                <img srcset="img/products__default-foto-1.png" alt="Default image" src="#" width="624" height="426">
+              </picture>
+              <div class="container-cube">
+                <div class="container-div">
+                  <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
+                  <p class="container-options">Страна:<span> Россия</span></p>
+                  <p class="container-options">Толщина:<span> 9 мм</span></p>
+                  <p class="container-options">Класс:<span> 33</span></p>
+                </div>
+                <div class="container-elem flex">
+                  <strong class="container-price">3 176 ₽/м2</strong>
+                  <div>
+                    <a class="container-site" href="favorites.html" aria-label="Избранное">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </a>
+                    <a class="container-site" href="#" aria-label="graph-bar">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#graph-bar"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="earlier__item">
-            <picture>
-              <source srcset="img/products__mobile-foto-2.webp" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="img/products__default-foto-2.png" media="(min-width: 577px)">
-              <img srcset="img/products__default-foto-2.png" alt="Default image" src="#" width="624" height="426">
-            </picture>
-            <div class="container-cube">
-              <div class="container-div">
-                <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
-                <p class="container-options">Страна:<span> Россия</span></p>
-                <p class="container-options">Толщина:<span> 9 мм</span></p>
-                <p class="container-options">Класс:<span> 33</span></p>
-              </div>
-              <div class="container-elem flex">
-                <strong class="container-price">3 176 ₽/м2</strong>
-                <div>
-                  <a class="container-site" href="favorites.html" aria-label="Избранное">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a class="container-site" href="#" aria-label="graph-bar">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#graph-bar"></use>
-                    </svg>
-                  </a>
+            </article>
+            <article class="swiper-slide">
+              <picture>
+                <source srcset="img/products__mobile-foto-2.webp" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/products__default-foto-2.png" media="(min-width: 577px)">
+                <img srcset="img/products__default-foto-2.png" alt="Default image" src="#" width="624" height="426">
+              </picture>
+              <div class="container-cube">
+                <div class="container-div">
+                  <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
+                  <p class="container-options">Страна:<span> Россия</span></p>
+                  <p class="container-options">Толщина:<span> 9 мм</span></p>
+                  <p class="container-options">Класс:<span> 33</span></p>
+                </div>
+                <div class="container-elem flex">
+                  <strong class="container-price">3 176 ₽/м2</strong>
+                  <div>
+                    <a class="container-site" href="favorites.html" aria-label="Избранное">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </a>
+                    <a class="container-site" href="#" aria-label="graph-bar">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#graph-bar"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="earlier__item">
-            <picture>
-              <source srcset="img/products__mobile-foto-3.webp" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="img/products__default-foto-3.png" media="(min-width: 577px)">
-              <img srcset="img/products__default-foto-3.png" alt="Default image" src="#" width="624" height="426">
-            </picture>
-            <div class="container-cube">
-              <div class="container-div">
-                <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
-                <p class="container-options">Страна:<span> Россия</span></p>
-                <p class="container-options">Толщина:<span> 9 мм</span></p>
-                <p class="container-options">Класс:<span> 33</span></p>
-              </div>
-              <div class="container-elem flex">
-                <strong class="container-price">3 176 ₽/м2</strong>
-                <div>
-                  <a class="container-site" href="favorites.html" aria-label="Избранное">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a class="container-site" href="#" aria-label="graph-bar">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#graph-bar"></use>
-                    </svg>
-                  </a>
+            </article>
+            <article class="swiper-slide">
+              <picture>
+                <source srcset="img/products__mobile-foto-3.webp" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/products__default-foto-3.png" media="(min-width: 577px)">
+                <img srcset="img/products__default-foto-3.png" alt="Default image" src="#" width="624" height="426">
+              </picture>
+              <div class="container-cube">
+                <div class="container-div">
+                  <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
+                  <p class="container-options">Страна:<span> Россия</span></p>
+                  <p class="container-options">Толщина:<span> 9 мм</span></p>
+                  <p class="container-options">Класс:<span> 33</span></p>
+                </div>
+                <div class="container-elem flex">
+                  <strong class="container-price">3 176 ₽/м2</strong>
+                  <div>
+                    <a class="container-site" href="favorites.html" aria-label="Избранное">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </a>
+                    <a class="container-site" href="#" aria-label="graph-bar">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#graph-bar"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="earlier__item">
-            <picture>
-              <source srcset="img/products__mobile-foto-4.webp" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="img/products__default-foto-4.png" media="(min-width: 577px)">
-              <img srcset="img/products__default-foto-4.png" alt="Default image" src="#" width="624" height="426">
-            </picture>
-            <div class="container-cube">
-              <div class="container-div">
-                <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
-                <p class="container-options">Страна:<span> Россия</span></p>
-                <p class="container-options">Толщина:<span> 9 мм</span></p>
-                <p class="container-options">Класс:<span> 33</span></p>
-              </div>
-              <div class="container-elem flex">
-                <strong class="container-price">3 176 ₽/м2</strong>
-                <div>
-                  <a class="container-site" href="favorites.html" aria-label="Избранное">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a class="container-site" href="#" aria-label="graph-bar">
-                    <svg class="container-site-hover" width="32" height="32">
-                      <use xlink:href="img/sprite.svg#graph-bar"></use>
-                    </svg>
-                  </a>
+            </article>
+            <article class="swiper-slide">
+              <picture>
+                <source srcset="img/products__mobile-foto-4.webp" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/products__default-foto-4.png" media="(min-width: 577px)">
+                <img srcset="img/products__default-foto-4.png" alt="Default image" src="#" width="624" height="426">
+              </picture>
+              <div class="container-cube">
+                <div class="container-div">
+                  <h3 class="container-subtitle">Ламинат AGT Effect Elegance 12 Эльбрус PRK 911</h3>
+                  <p class="container-options">Страна:<span> Россия</span></p>
+                  <p class="container-options">Толщина:<span> 9 мм</span></p>
+                  <p class="container-options">Класс:<span> 33</span></p>
+                </div>
+                <div class="container-elem flex">
+                  <strong class="container-price">3 176 ₽/м2</strong>
+                  <div>
+                    <a class="container-site" href="favorites.html" aria-label="Избранное">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#heart"></use>
+                      </svg>
+                    </a>
+                    <a class="container-site" href="#" aria-label="graph-bar">
+                      <svg class="container-site-hover" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#graph-bar"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -617,7 +623,7 @@
   
   <footer class="footer">
     <div class="footer__container container flex">
-      <div class="footer__icons">
+      <div class="footer__div">
         <a class="footer__logo">
           <img src="img/logo.svg" alt="Logo" width="142" height="44">
         </a>
@@ -647,25 +653,25 @@
       </div>
       <div class="footer__list">
         <ul class="footer__margin list-reset">
-          <li class="footer__">Информация о магазине</li>
-          <li class="footer__link-margin">
-            <a class="">
-              <svg class="header__tel-icon" width="16.5" height="16.5">
+          <li class="footer__subtitle"><strong>Информация о магазине</strong></li>
+          <li class="footer__sublink-margin">
+            <a class="footer__icons container-link flex" href="#" aria-label="Адрес">
+              <svg width="24" height="24">
                 <use xlink:href="img/sprite.svg#place"></use>
               </svg>
               Самара, Авроры 114а к5
             </a>
           </li>
-          <li class="footer__link-margin">
-            <a class="header__tel" href="tel:+78464914163">
-              <svg class="header__tel-icon" width="16.5" height="16.5">
+          <li class="footer__sublink-margin">
+            <a class="footer__icons container-link flex" href="tel:+78464914163" aria-label="Телефон">
+              <svg class="container-site-hover" width="24" height="24">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
               +7 846 491 41 63
             </a>
-          <li class="footer__link-margin">
-            <a class="" href="mailto:info@floorsmr.ru">
-              <svg class="header__tel-icon" width="16.5" height="16.5">
+          <li class="footer__sublink-margin">
+            <a class="footer__icons container-link flex" href="mailto:info@floorsmr.ru" aria-label="Почта">
+              <svg class="container-site-hover" width="24" height="24">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
               info@floorsmr.ru
@@ -673,7 +679,7 @@
           </li>
         </ul>
         <ul class="footer__margin list-reset">
-          <li class="footer__subtitle">О компании</li>
+          <li class="footer__subtitle"><strong>О компании</strong></li>
           <li class="footer__link-margin">
             <a class="container-link" href="#" aria-label="Магазины">Магазины</a>
           </li>
@@ -685,7 +691,7 @@
           </li>
         </ul>
         <ul class="footer__margin list-reset">
-          <li class="footer__subtitle">Покупателям</li>
+          <li class="footer__subtitle"><strong>Покупателям</strong></li>
           <li class="footer__link-margin">
             <a class="container-link" href="services.html" aria-label="Услуги">Услуги</a>
           </li>
@@ -693,7 +699,7 @@
             <a class="container-link" href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a>
           </li>
           <li class="footer__link-margin">
-            <a class="container-blink" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
+            <a class="container-link" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
           </li>
         </ul>
       </div>
@@ -706,6 +712,6 @@
   <script src="js/settings.js"></script>
   <script src="js/selector.js"></script>
   <script src="js/sliders.js"></script>
-  <script src="js/contacts-validate.js"></script>
+  <script src="js/main-validate.js"></script>
 </body>
 </html>

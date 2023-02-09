@@ -95,3 +95,14 @@
     background-color: $orange
   }
 }
+
+@media (max-width: 1000px) {
+  .advice {
+    &__item-one {
+      grid-column: span 6;
+      margin-top: 40px;
+      padding-top: 55px;
+      padding-left: 30px;
+    }
+  }
+}

@@ -1,16 +1,38 @@
 @import '_variables.scss';
 
 .cabinet {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
 
   &__item-one {
     grid-column: span 3;
+    padding-top: 28px;
+    padding-bottom: 33px;
+  }
+
+  &__btn {
+    align-items: center;
+    padding: 12px 30px;
   }
 
   &__item-two {
     grid-column: span 9;
+    padding: 30px 40px;
+  }
+
+  &__form {
+    column-count: 2;
+  }
+
+  &__input {
+    background-color: $grey;
+  }
+
+  &__input::placeholder {
+    color: #747474;
   }
 
   &__btn-blue {

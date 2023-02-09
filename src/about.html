@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Главная страница.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Настройки профиля</title>
-  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
+  <title>О компании</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -35,7 +34,7 @@
           </nav>
         </div>
         <div class="header__div flex">
-          <a class="header__place">Самара, Авроры 114а к5</a>
+          <a class="">Самара, Авроры 114а к5</a>
           <div class="header__filter">
             <select class="js-choices">
               <option value="one">+7 846 491 41 63</option>
@@ -45,23 +44,23 @@
           </div>
         </div>
         <div class="list-reset flex">
-          <a class="container-link container-site" href="cabinet.html" aria-label="Личный кабинет"> 
-            <svg width="32" height="32">
+          <a class="container-site" href="cabinet.html" aria-label="Личный кабинет"> 
+            <svg class="container-site-hover" width="32" height="32">
               <use xlink:href="img/sprite.svg#cabinet"></use>
             </svg>
           </a>
-          <a class="container-link container-site" href="comparison.html" aria-label="Сравнение">
-            <svg width="32" height="32">
+          <a class="container-site" href="#" aria-label="graph-bar">
+            <svg class="container-site-hover" width="32" height="32">
               <use xlink:href="img/sprite.svg#graph-bar"></use>
             </svg>
           </a>
-          <a class="container-link container-site" href="favorites.html" aria-label="Избранное">
-            <svg width="32" height="32">
+          <a class="container-site" href="favorites.html" aria-label="Избранное">
+            <svg class="container-site-hover" width="32" height="32">
               <use xlink:href="img/sprite.svg#heart"></use>
             </svg>
           </a>
-          <a class="container-link container-site" href="basket.html" aria-label="Корзина">
-            <svg width="32" height="32">
+          <a class="container-site" href="basket.html" aria-label="Кабинет">
+            <svg class="container-site-hover" width="32" height="32">
               <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </a>
@@ -75,13 +74,13 @@
         </a>
         <ul class="header__cube list-reset flex">
           <li class="header__sublink-margin">
-            <a class="header__btn container-btn" href="catalog.html" aria-label="Каталог">Каталог</a>
+            <a class="header__btn container-btn" href="catalog.html">Каталог</a>
           </li>
           <li class="header__sublink-margin">
-            <a class="container-link" href="services.html" aria-label="Услуги">Услуги</a>
+            <a class="container-link" href="services.html">Услуги</a>
           </li>
           <li class="header__sublink-margin">
-            <a class="container-link" href="stock.html" aria-label="Акции">Акции</a>
+            <a class="container-link" href="stock.html">Акции</a>
           </li>
         </ul>
         <form class="header__form flex">
@@ -94,77 +93,94 @@
     <div class="header__link-div container">
       <ul class="header__breadcrumbs list-reset">
         <li class="header__breadcrumbs-item">
-          <a class="container-link" href="index.html" aria-label="Главная">Главная</a>
+          <a class="container-link" href="index.html" aria-label="Главная"><span class="container-focus-link">Главная</span></a>
         </li>
         <li class="header__breadcrumbs-item">
-          <a class="container-link last-link" aria-label="Профиль">Профиль</a>
+          <a class="container-link last-link" aria-label="О компании"><span class="container-focus-link">О компании</span></a>
         </li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="cabinet">
+    <section class="about container">
+      <div class="about__elem">
+        <h2 class="about__title">Trend Floor - салон отделочных материалов</h2>
+        <p class="about__text">
+          Наша команда специализируется на продаже качественных отделочных материалов.
+        </p>
+        <p class="about__text about__subtext">
+          Свою деятельность мы начали в 2018 году и за это время сформировали исключительный ассортимент,
+          состоящий из множества отделочных материалов, регулярно пополняя каталог новыми позициями.
+        </p>
+        <div class="about__list">
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#money"></use>
+            </svg>
+            <p class="about__subtitle">Низкие цены</p>
+          </div>
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#honesty"></use>
+            </svg>
+            <p class="about__subtitle">Честность</p>
+          </div>
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#basket-about"></use>
+            </svg>
+            <p class="about__subtitle">Широкий ассортимент</p>
+          </div>
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#guarantee"></use>
+            </svg>
+            <p class="about__subtitle">Гарантии</p>
+          </div>
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <p class="about__subtitle">Качество товара</p>
+          </div>
+          <div class="about__item">
+            <svg width="56" height="56">
+              <use xlink:href="img/sprite.svg#people"></use>
+            </svg>
+            <p class="about__subtitle">Профессиональные менеджеры</p>
+          </div>
+        </div>
+        <a class="container-btn" href="#">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="team">
       <div class="container">
-        <ul class="cabinet__list list-reset">
-          <li class="cabinet__item-one container-border">
-            <a class="cabinet__btn container-btn flex" href="cabinet.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#profile"></use>
-              </svg>
-              Настройки профиля
-            </a>
-            <a class="cabinet__btn container-subbtn flex" href="orders.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#orders"></use>
-              </svg>
-              Активные заказы
-            </a>
-            <a class="cabinet__btn container-subbtn flex" href="history.html">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite.svg#history"></use>
-              </svg>
-              История заказов
-            </a>
+        <h2 class="contacts-title">Наша команда</h2>
+        <ul class="team__list">
+          <li class="team__elem container-border">
+            <h3 class="team__name">Исаев Виталий</h3>
+            <p class="team__work">Генеральный директор</p>
+            <p class="team__post">isaev_263@mail.ru</p>
+            <p class="team__text">
+              «Клиент – это самый важный посетитель. Не он зависит от нас. Мы зависим от него. Он не прерывает нашу
+              работу. Он – цель нашей работы. Он не по ту сторону нашего бизнеса. Он – его часть. Мы не делаем
+              ему одолжение, обслуживая его. Он делает нам одолжение, давая возможность это сделать»
+            </p>
           </li>
-          <li class="cabinet__item-two container-border">
-            <form class="cabinet__form" action="send.php" method="post">
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="text" placeholder="Имя" name="name" id="name">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#user"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Телефон" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#telephone"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Электронная почта" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#email"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Новый пароль" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#new-password"></use>
-                </svg>
-              </label>
-              <label class="container-label">
-                <input class="cabinet__input container-input" type="tel" placeholder="Подтверждение нового пароля" name="tel" id="tel">
-                <svg class="container-icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#true-new-password"></use>
-                </svg>
-              </label>
-              <div>
-                <button class="container-btn">Сохранить</button>
-                <a class="container-subbtn">Отменить</a>
-              </div>
-            </form>
-          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="diplomas">
+      <div class="container">
+        <h2 class="contacts-title">Дипломы и сертификаты</h2>
+        <ul class="diplomas__list list-reset">
+          <li class="diplomas__item"></li>
+          <li class="diplomas__item"></li>
+          <li class="diplomas__item"></li>
+          <li class="diplomas__item"></li>
         </ul>
       </div>
     </section>
@@ -172,7 +188,7 @@
   
   <footer class="footer">
     <div class="footer__container container flex">
-      <div class="footer__div">
+      <div class="footer__icons">
         <a class="footer__logo">
           <img src="img/logo.svg" alt="Logo" width="142" height="44">
         </a>
@@ -202,25 +218,25 @@
       </div>
       <div class="footer__list">
         <ul class="footer__margin list-reset">
-          <li class="footer__subtitle"><strong>Информация о магазине</strong></li>
-          <li class="footer__sublink-margin">
-            <a class="footer__icons container-link flex" href="#" aria-label="Адрес">
-              <svg width="24" height="24">
+          <li class="footer__">Информация о магазине</li>
+          <li class="footer__link-margin">
+            <a class="">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
                 <use xlink:href="img/sprite.svg#place"></use>
               </svg>
               Самара, Авроры 114а к5
             </a>
           </li>
-          <li class="footer__sublink-margin">
-            <a class="footer__icons container-link flex" href="tel:+78464914163" aria-label="Телефон">
-              <svg class="container-site-hover" width="24" height="24">
+          <li class="footer__link-margin">
+            <a class="header__tel" href="tel:+78464914163">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
               +7 846 491 41 63
             </a>
-          <li class="footer__sublink-margin">
-            <a class="footer__icons container-link flex" href="mailto:info@floorsmr.ru" aria-label="Почта">
-              <svg class="container-site-hover" width="24" height="24">
+          <li class="footer__link-margin">
+            <a class="" href="mailto:info@floorsmr.ru">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
               info@floorsmr.ru
@@ -228,7 +244,7 @@
           </li>
         </ul>
         <ul class="footer__margin list-reset">
-          <li class="footer__subtitle"><strong>О компании</strong></li>
+          <li class="footer__subtitle">О компании</li>
           <li class="footer__link-margin">
             <a class="container-link" href="#" aria-label="Магазины">Магазины</a>
           </li>
@@ -240,7 +256,7 @@
           </li>
         </ul>
         <ul class="footer__margin list-reset">
-          <li class="footer__subtitle"><strong>Покупателям</strong></li>
+          <li class="footer__subtitle">Покупателям</li>
           <li class="footer__link-margin">
             <a class="container-link" href="services.html" aria-label="Услуги">Услуги</a>
           </li>
@@ -248,13 +264,12 @@
             <a class="container-link" href="delivery.html" aria-label="Доставка и оплата">Доставка и оплата</a>
           </li>
           <li class="footer__link-margin">
-            <a class="container-link" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
+            <a class="container-blink" href="guarantee.html" aria-label="Гарантия и возврат">Гарантия и возврат</a>
           </li>
         </ul>
       </div>
     </div>
   </footer>
-  <script src="libs/choices.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/selector.js"></script>
 </body>
