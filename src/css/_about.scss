@@ -24,13 +24,19 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 30px;
-    max-width: 610px;
+    margin-bottom: 8px;
+    max-width: 500px;
     line-height: 24px;
+  }
+
+  &__subtext {
+    max-width: 612px;
+    margin-bottom: 30px;
   }
 
   &__list {
     column-count: 3;
+    margin-bottom: 30px;
   }
 
   &__subtitle {
@@ -44,5 +50,71 @@
     grid-column: span 5;
     background-image: url("../img/about__default-foto.png");
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1000px) {
+  &::before {
+    background-image: url("../img/about__media-foto.png");
+  }
+}
+
+.team {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+  
+  &__elem {
+    text-align: center;
+    grid-column: span 4;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 23px;
+  }
+  
+  &__work {
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 15px;
+    color: #747474;
+  }
+
+  &__post {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  &__text {
+    margin: 0;
+    line-height: 19px;
+  }
+}
+
+.diplomas {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    grid-gap: 20px;
+  }
+  
+  &__elem {
+    grid-column: span 3;
+    border-radius: 5px;
+    background-color: #D9D9D9;
   }
 }

@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+.favorites {
+  &__text {
+    margin: 0;
+    line-height: 22.4px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $orange;
+    cursor: pointer;
+  }
+}

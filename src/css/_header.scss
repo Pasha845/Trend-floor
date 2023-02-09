@@ -4,17 +4,9 @@
   padding-bottom: 20px;
 
   &__padding {
-    padding-top: 23px;
-    padding-bottom: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-
-  
-
-
-
-
-
-
 
   &__filter {
     display: flex;
@@ -214,14 +206,6 @@
     color: green;
   }
 
-
-
-
-
-
-
-
-
   &__tel {
     display: flex;
     align-items: center;
@@ -241,7 +225,6 @@
     right: 1px;
     top: -1px;
     bottom: -2px;
-    background-color: $bone;
     transform: scaleX(0);
     transform-origin: left;
     transition: -webkit-transform .3s ease;
@@ -249,21 +232,15 @@
     transition: transform .3s ease, -webkit-transform .3s ease;
   }
 
-  &__tel:hover {
-    color: $secondary_light;
-  }
-
   &__tel:focus:not(:active)::before {
     transform: scaleX(1);
   }
   
   &__tel:focus:not(:hover):not(:active) {
-    color: $secondary;
     outline: none;
   }
   
   &__tel:active {
-    color: $secondary_shade;
     transition: none;
   }
 
@@ -281,14 +258,6 @@
     padding-bottom: 32px;
   }
 
-  &__burger,
-  &__menu-exit {
-    display: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
   &__subdiv {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -300,6 +269,7 @@
   }
 
   &__cube {
+    align-items: center;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -321,13 +291,14 @@
   }
 
   &__label {
-    width: 715px;
+    max-width: 715px;
   }
 
   &__input {
+    margin: 0;
     padding: 18px;
     border-radius: 5px;
-    width: 715px;
+    max-width: 715px;
     height: 50px;
   }
   
@@ -362,24 +333,15 @@
   }
 }
 
-@keyframes dropdownOpen {
-  from {
-    opacity: 0;
+@media (max-width: 1000px) {
+  .header {
+    &__link-margin:not(:last-child) {
+      margin-right: 15px;
+    }
+    
+    &__place,
+    &__filter {
+      display: none;
+    }
   }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes dropdownClose {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.last-link {
-  color: $primary_shade;
 }

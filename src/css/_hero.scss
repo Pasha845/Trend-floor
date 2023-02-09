@@ -1,8 +1,13 @@
 @import '_variables.scss';
 
 .hero {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 15px;
+
+  &__slider-wrapper {
+    position: relative;
+  }
   
   &__list {
     display: grid;
@@ -36,18 +41,18 @@
     grid-column: span 7;
   }
 
-  &__slider-wrapper {
-    position: relative;
+  &__btn {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
   }
 
-  &__prev {
-    right: 60px;
-    transform: translate(50%, -180%);
-  }
-    
   &__pagination {
     position: absolute;
-    top: 400px;
+    z-index: 10;
     width: 85px;
     height: 15px;
     outline: none;
@@ -55,8 +60,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: $black;
   cursor: pointer;
 }

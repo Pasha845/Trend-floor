@@ -1,0 +1,45 @@
+@import '_variables.scss';
+
+.services {
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__cube {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 38px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__text a {
+    text-decoration: underline;
+  }
+
+  &__link-blue {
+    color: $blue;
+  }
+
+  &__link-green {
+    color: $green;
+  }
+
+  &__link-violet {
+    color: $violet;
+  }
+
+  &__subtext {
+    margin: 0;
+  }
+}

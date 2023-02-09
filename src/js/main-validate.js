@@ -1,7 +1,7 @@
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999)-999-99-99");
 im.mask(selector);
-const validation = new JustValidate('.contacts__form', {
+const validation = new JustValidate('.advice__form', {
   errorFieldCssClass: "is-invalid",
   successFieldCssClass: "is-valid",
   errorLabelStyle: {
